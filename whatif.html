@@ -3,12 +3,21 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+  {{> whatif}}
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="whatif">
+<div class="content">
+<div class="input-container"><h1 class="main-h1">What if </h1><input type="text" class="new-input"></div>
+<ul class="whatif-list">
+	{{#each whatifs}}
+		<li>
+			<h2><strong>What if</strong> {{content}}</h2>
+			<h4>{{creator}}</h4>
+		</li>
+	{{/each}}
+</ul>
+</div>
 </template>
