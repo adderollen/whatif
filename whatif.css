@@ -23,7 +23,7 @@ body{
 }
 
 .header-links .main-logo {
-	min-width: 28vw;
+	width: 100%;
 }
 
 .header-links .links {
@@ -34,7 +34,7 @@ body{
 .header-links a {
 	display: inline-block;
 	text-decoration: initial;
-  	color: #FD2905;
+  	color: #da362b;
 	max-width: 40%;
 	position: relative;
 }
@@ -190,46 +190,35 @@ input:focus {
 .icon-container svg {
 	width: 3em;
 	flex: 1;
-	padding-left: 2.5em;
-	padding-right: 2.5em;
+	  margin-left: 4vw;
+  margin-right: 5vw;
 	height: 3em;
 }
 
-.insta:hover {
-	fill: #38383A !important;
-}
-
-.flickr:hover {
-	fill: #FF0084 !important;
-}
-
-.linkedin:hover {
-	fill: #007BB6 !important;
-}
-
-.youtube:hover {
-	fill:#E12B28 !important;
-}
-
-.twitter:hover {
-	fill: #5EA9DD !important;
-}
-
-.facebook:hover {
-	fill:#4B6DAA !important;
-}
-
 @media screen and (max-width: 400px) {
-	.content {
+	.header-links {
 		width: 80%;
 	}
 
+	.header-links .main-logo {
+		margin-left: 1em;
+	}
+
+	.content {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
 	.main-h1 {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 
 	input {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
+	}
+
+	.whatif-list {
+		width: 90%;
 	}
 
 	.whatif-list h2 {
@@ -240,5 +229,21 @@ input:focus {
 	.whatif-list h4 {
 		font-size: 0.9rem;
 		-webkit-margin-before: 0;
+	}
+
+	.tedx-content {
+		padding-right: 10vw;
+		padding-left: 10vw;
+	}
+
+	.icon-container {
+		width: 85%;
+	}
+
+	.icon-container svg {
+		width: 2em;
+		height: 2em;
+		margin-right: 1.8em;
+		margin-left: 1em;
 	}
 }
