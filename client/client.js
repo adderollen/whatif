@@ -1,8 +1,30 @@
 Meteor.subscribe('whatifs')
 
-// Add flexboxes instead
+Template.header.events({
+	'mouseenter a.right': function(evt, template) {
+		$('a.right img').attr('src', 'play_dark.gif')
+		$('a.right p').css('color', '#c3260c')
+	},
+
+	'mouseleave a.right': function(evt, template) {
+		$('a.right img').attr('src', 'play.gif')
+		$('a.right p').css('color', '#fd2905')
+	},
+
+	'mouseenter a.left': function(evt, template) {
+		$('a.left img').attr('src', 'tedx-logo_dark.png')
+		$('a.left p').css('color', '#c3260c')
+	},
+
+	'mouseleave a.left': function(evt, template) {
+		$('a.left img').attr('src', 'tedx-logo.png')
+		$('a.left p').css('color', '#fd2905')
+	}
+})
+
+
 Template.whatif.rendered = function() {
-	this.$('.new-input').focus()
+	
 }
 
 Template.whatif.helpers({
@@ -17,7 +39,7 @@ Template.whatif.events({
 		var input = $('.new-input').val()
 		if(evt.which === 13 && input) {
 			var stage = $('.new-input').attr('placeholder');
-			if(!stage) {
+			if(stage != "Enter your name") {
 				$('.new-input').val('')
 				$('.main-h1').text('Name:')
 				$('.new-input').attr('placeholder', 'Enter your name')
@@ -25,7 +47,7 @@ Template.whatif.events({
 			} else {
 				$('.new-input').val('')
 				$('.main-h1').text('What if')
-				$('.new-input').attr('placeholder', '')
+				$('.new-input').attr('placeholder', 'money did not exist?')
 				Whatifs.insert({
 					createdAt: new Date(),
 					content: Session.get('whatif'),

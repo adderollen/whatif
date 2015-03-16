@@ -2,25 +2,102 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
-	font-family: 'Open Sans', sans-serif;	
-	background-image: url('background.jpg');
-	background-repeat: no-repeat;
-	background-position-y:-48em;
+body{
+	margin: 0;	
+}
+
+ body, p, a, h1, h2, h3 {
+ 	font-family: 'Open Sans', sans-serif;
+ }
+
+.header-content {
+	min-height: 60vh;
+	width: 100%;
+}
+
+.header-links {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 8em;
+}
+
+.header-links .main-logo {
+	min-width: 28vw;
+}
+
+.header-links .links {
+	margin-top: 6em;
+	margin-bottom: 3em;
+}
+
+.header-links a {
+	display: inline-block;
+	text-decoration: initial;
+  	color: #FD2905;
+	max-width: 40%;
+	position: relative;
+}
+
+.header-links .links a.left img {
+	max-width: 100%;
+}
+
+.header-links .links a.right img {
+	max-width: 50%;
+}
+
+.header-links .links a.left p {
+	margin-top: -0.6em;
+}
+
+.header-links .links a p {
+	-webkit-margin-before: 0;
 }
 
 .content {
-	width: 60%;
+	padding-left: 20vw;
+	padding-right: 20vw;
 	margin: 0 auto;
-	margin-top: 7em;
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-position-y:-48em;
+	padding-top: 3em;	
+	padding-bottom: 5em;
 }
 
 .input-container {
-	 display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
- 	 display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
- 	 display: -ms-flexbox;      /* TWEENER - IE 10 */
-	 display: -webkit-flex;     /* NEW - Chrome */
- 	 display: flex;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+}
+
+.list-container {
+	overflow-y: auto;
+	height: 400px;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.list-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.list-container::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+.list-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(203, 100, 100);
 }
 
 .main-h1 {
@@ -38,9 +115,14 @@ input {
 	color: white;
 	min-width: 20%;
 	-webkit-flex: 1; /* Safari 6.1+ */
-    -ms-flex: 1;
-    flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 }
+
+input::-webkit-input-placeholder {
+	color: rgb(203, 100, 100);
+}
+
 
 input:focus {
 	outline: none;
@@ -51,7 +133,6 @@ input:focus {
 	margin: 0 auto;	
 	width: 70%;
 	padding: 0;
-	margin-top: 8em;
 }
 
 .whatif-list h2 {
@@ -68,6 +149,74 @@ input:focus {
 	font-size: 1rem;
 	-webkit-margin-before: 0;
 	font-weight: normal;
+}
+
+.tedx-content {
+	padding-left: 35vw;
+  margin: 0 auto;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-right: 35vw;
+  background: #FD2905;
+  color: white;
+}
+
+.footer-content {
+	  width: 100%;
+  background: white;
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+.footer-content h1 {
+	  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+  color: black;
+}
+
+.icon-container {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 2em;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+}
+
+.icon-container svg {
+	width: 3em;
+	flex: 1;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	height: 3em;
+}
+
+.insta:hover {
+	fill: #38383A !important;
+}
+
+.flickr:hover {
+	fill: #FF0084 !important;
+}
+
+.linkedin:hover {
+	fill: #007BB6 !important;
+}
+
+.youtube:hover {
+	fill:#E12B28 !important;
+}
+
+.twitter:hover {
+	fill: #5EA9DD !important;
+}
+
+.facebook:hover {
+	fill:#4B6DAA !important;
 }
 
 @media screen and (max-width: 400px) {
