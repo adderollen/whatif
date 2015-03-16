@@ -1,12 +1,7 @@
 Meteor.subscribe('whatifs')
 
+// Add flexboxes instead
 Template.whatif.rendered = function() {
-	var containerWidth = this.$('.content').width();
-	var headerWidth = this.$('.main-h1').width() + 14;
-	var inputWidth = containerWidth - headerWidth-20;
-	console.log('container: ' + containerWidth + ' headerWidth: ' + headerWidth + ' new-input: ' + inputWidth)
-	this.$('.new-input').width(inputWidth)
-
 	this.$('.new-input').focus()
 }
 

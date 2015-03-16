@@ -15,8 +15,11 @@ body {
 	margin-top: 7em;
 }
 
+.input-container {
+	display: flex;
+}
+
 .main-h1 {
-	display: inline-block;
 	margin-right: 10px;
 	font-weight: normal;
 	color: white;
@@ -25,12 +28,12 @@ body {
 
 input {
 	border: none;
-	display: inline-block;
 	font-size: 3em;
 	font-family: 'Open Sans', sans-serif;
 	background-color: transparent;
 	color: white;
 	min-width: 20%;
+	flex: 1;
 }
 
 input:focus {
