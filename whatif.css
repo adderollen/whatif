@@ -6,38 +6,45 @@ body{
 	margin: 0;	
 }
 
- body, p, a, h1, h2, h3 {
- 	font-family: 'Open Sans', sans-serif;
- }
+body, p, a, h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+}
 
 .header-content {
-	min-height: 60vh;
+	max-height: 3.5em;
 	width: 100%;
 }
 
 .header-links {
 	width: 90%;
 	margin: 0 auto;
-	text-align: center;
-	margin-top: 8em;
 }
 
 .header-links .main-logo {
-	width: 40vw;
+	width: 16vw;
+	padding-top: 0.5em;
 }
 
 
 .header-links a {
 	display: inline-block;
 	text-decoration: initial;
-  	color: #da362b;
-	width: 20vw;
+	color: #da362b;
+	width: 15vw;
 	position: relative;
 	text-align: center;
 }
 
+.header-links a.left {
+	top: -0.2em;
+}
+
+.header-links a.right {
+
+}
+
 .header-links .left img {
-	max-width: 15vw;
+	max-width: 5vw;
 }
 
 .header-links .left p {
@@ -45,11 +52,16 @@ body{
 }
 
 .header-links .right img {
-	max-width: 6vw;
+	max-width: 3vw;
+	margin-right: 0.5em;
 }
 
 .header-links .right p {
-	  -webkit-margin-before: 0em;
+	-webkit-margin-before: 0em;
+	display: inline;
+	font-size: 1.5rem;
+	top: -0.4em;
+	position: relative;
 }
 
 .header-links a p {
@@ -163,27 +175,27 @@ input:focus {
 
 .tedx-content {
 	padding-left: 35vw;
-  margin: 0 auto;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  padding-right: 35vw;
-  background: #FD2905;
-  color: white;
+	margin: 0 auto;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	padding-right: 35vw;
+	background: #FD2905;
+	color: white;
 }
 
 .footer-content {
-	  width: 100%;
-  background: white;
-  padding-top: 3em;
-  padding-bottom: 4em;
+	width: 100%;
+	background: white;
+	padding-top: 3em;
+	padding-bottom: 4em;
 }
 
 .footer-content h1 {
-	  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 100;
-  -webkit-margin-before: 0;
-  color: black;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 100;
+	-webkit-margin-before: 0;
+	color: black;
 
 }
 
@@ -202,32 +214,45 @@ input:focus {
 .icon-container svg {
 	width: 3em;
 	flex: 1;
-	  margin-left: 4vw;
-  margin-right: 4vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
 	height: 3em;
 }
 
 @media screen and (max-width: 400px) {
-	.header-links {
-		width: 80%;
-	}
 
 	.header-links .main-logo {
 		margin-left: 1em;
-		width: 80vw;
+		width: 39vw;
 	}
 
-	.header-links a {
-		width: 30vw;
-		margin-top: 2em;
+	.header-links a.left {
+		width: 20vw;
+		top: 0.2em;
+	}
+
+	.header-links a.right {
+		width: 20vw;
+		top: 0.5em;
 	}
 
 	.header-links .left img {
-		max-width: 30vw;
+		max-width: 17vw;
 	}
 
 	.header-links .right img {
-		max-width: 9vw;
+		max-width: 7vw;
+		margin-right: 0;
+	}
+
+	.header-links .right p {
+		font-size: 0.7rem;
+		display: block;
+	}
+
+	.header-links .left p {
+		font-size: 1rem;
+		font-size: 0.7rem;
 	}
 
 	.content {
