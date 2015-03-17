@@ -48,6 +48,7 @@ body, p, a, h1, h2, h3 {
 
 .header-links .left p {
 	-webkit-margin-before: -1em;
+	-webkit-margin-after: 0em;
 }
 
 .header-links .right img {
@@ -59,7 +60,7 @@ body, p, a, h1, h2, h3 {
 	-webkit-margin-before: 0em;
 	display: inline;
 	font-size: 1.5rem;
-	top: -0.2em;
+	top: -0.4em;
 	position: relative;
 }
 
