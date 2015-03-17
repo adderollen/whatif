@@ -28,6 +28,7 @@ Template.whatif.rendered = function() {
 	if (width < 600) {
 		$('.new-input').attr('placeholder', 'you wrote something?')
 	};
+	$('.new-input').focus()
 }
 
 Template.whatif.helpers({
