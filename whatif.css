@@ -16,48 +16,49 @@ body{
 }
 
 .header-links {
-	width: 50%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 8em;
 }
 
 .header-links .main-logo {
-	width: 100%;
+	width: 40vw;
 }
 
-.header-links .links {
-	margin-top: 6em;
-	margin-bottom: 3em;
-}
 
 .header-links a {
 	display: inline-block;
 	text-decoration: initial;
   	color: #da362b;
-	max-width: 40%;
+	width: 20vw;
 	position: relative;
+	text-align: center;
 }
 
-.header-links .links a.left img {
-	max-width: 100%;
+.header-links .left img {
+	max-width: 15vw;
 }
 
-.header-links .links a.right img {
-	max-width: 50%;
+.header-links .left p {
+	-webkit-margin-before: -1em;
 }
 
-.header-links .links a.left p {
-	margin-top: -0.6em;
+.header-links .right img {
+	max-width: 6vw;
 }
 
-.header-links .links a p {
-	-webkit-margin-before: 0;
+.header-links .right p {
+	  -webkit-margin-before: 0em;
+}
+
+.header-links a p {
+	-webkit-margin-before: -1em;
 }
 
 .content {
-	padding-left: 20vw;
-	padding-right: 20vw;
+	padding-left: 11vw;
+	padding-right: 11vw;
 	margin: 0 auto;
 	background-image: url('background.jpg');
 	background-repeat: no-repeat;
@@ -72,7 +73,9 @@ body{
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
 	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	justify-content: center;
 }
+
 
 .list-container {
 	overflow-y: auto;
@@ -80,6 +83,8 @@ body{
 	margin-top: 3em;
 	margin-bottom: 3em;
 }
+
+
 
 .list-container::-webkit-scrollbar-track
 {
@@ -105,6 +110,7 @@ body{
 	font-weight: normal;
 	color: white;
 	font-size: 3rem;
+	margin-left: 1vw;
 }
 
 input {
@@ -133,6 +139,10 @@ input:focus {
 	margin: 0 auto;	
 	width: 70%;
 	padding: 0;
+}
+
+.whatif-list li {
+	text-align: center;
 }
 
 .whatif-list h2 {
@@ -174,6 +184,7 @@ input:focus {
   font-weight: 100;
   -webkit-margin-before: 0;
   color: black;
+
 }
 
 .icon-container {
@@ -185,13 +196,14 @@ input:focus {
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
 	display: -webkit-flex;     /* NEW - Chrome */
 	display: flex;
+	justify-content: center;
 }
 
 .icon-container svg {
 	width: 3em;
 	flex: 1;
 	  margin-left: 4vw;
-  margin-right: 5vw;
+  margin-right: 4vw;
 	height: 3em;
 }
 
@@ -202,6 +214,20 @@ input:focus {
 
 	.header-links .main-logo {
 		margin-left: 1em;
+		width: 80vw;
+	}
+
+	.header-links a {
+		width: 30vw;
+		margin-top: 2em;
+	}
+
+	.header-links .left img {
+		max-width: 30vw;
+	}
+
+	.header-links .right img {
+		max-width: 9vw;
 	}
 
 	.content {

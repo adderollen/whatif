@@ -24,7 +24,10 @@ Template.header.events({
 
 
 Template.whatif.rendered = function() {
-	
+	var width = window.innerWidth;
+	if (width < 600) {
+		$('.new-input').attr('placeholder', 'you wrote something?')
+	};
 }
 
 Template.whatif.helpers({
@@ -36,6 +39,7 @@ Template.whatif.helpers({
 
 Template.whatif.events({
 	'keypress input.new-input': function(evt, template) {
+		var width = window.innerWidth;
 		var input = $('.new-input').val()
 		if(evt.which === 13 && input) {
 			var stage = $('.new-input').attr('placeholder');
@@ -47,7 +51,11 @@ Template.whatif.events({
 			} else {
 				$('.new-input').val('')
 				$('.main-h1').text('What if')
-				$('.new-input').attr('placeholder', 'you wrote something?')
+				if (width < 600) {
+					$('.new-input').attr('placeholder', 'you wrote something?')
+				} else {
+					$('.new-input').attr('placeholder', 'you wrote something on your mind?')
+				}	
 				Whatifs.insert({
 					createdAt: new Date(),
 					content: Session.get('whatif'),
