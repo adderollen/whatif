@@ -11,7 +11,6 @@ body, p, a, h1, h2, h3 {
 }
 
 .header-content {
-	max-height: 3.5em;
 	width: 100%;
 }
 
@@ -30,7 +29,7 @@ body, p, a, h1, h2, h3 {
 	display: inline-block;
 	text-decoration: initial;
 	color: #da362b;
-	width: 15vw;
+	width: 20vw;
 	position: relative;
 	text-align: center;
 }
@@ -60,7 +59,7 @@ body, p, a, h1, h2, h3 {
 	-webkit-margin-before: 0em;
 	display: inline;
 	font-size: 1.5rem;
-	top: -0.4em;
+	top: -0.2em;
 	position: relative;
 }
 
@@ -233,7 +232,7 @@ input:focus {
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
 
 	.header-links .main-logo {
 		margin-left: 1em;
@@ -275,11 +274,11 @@ input:focus {
 	}
 
 	.main-h1 {
-		font-size: 1.4rem;
+		font-size: 5vw;
 	}
 
 	input {
-		font-size: 1.4rem;
+		font-size: 5vw;
 	}
 
 	.whatif-list {
@@ -311,4 +310,8 @@ input:focus {
 		margin-right: 1.8em;
 		margin-left: 1em;
 	}
+}
+
+@media screen and (max-width: 400px) {
+
 }

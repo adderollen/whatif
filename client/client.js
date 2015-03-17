@@ -25,7 +25,8 @@ Template.header.events({
 
 Template.whatif.rendered = function() {
 	var width = window.innerWidth;
-	if (width < 600) {
+	console.log(width)
+	if (width < 1000) {
 		$('.new-input').attr('placeholder', 'you wrote something?')
 	};
 	$('.new-input').focus()
